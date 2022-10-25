@@ -1,0 +1,37 @@
+.container {
+  display: grid;
+  /* Style rows and columns */
+  grid-template-rows: repeat(15, 75px);
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+#title {
+  grid-column: 1/auto-fill;
+  grid-row: 1;
+}
+
+.friend {
+  grid-row: span 1;
+  grid-column: span 1;
+}
+
+/* Style other types of family members below*/
+.sibling{
+  grid-row: span 1;
+  grid-column: span 2;
+}
+
+.aunt{
+  grid-row: span 2;
+  grid-column: span 1;
+}
+
+.uncle{
+  grid-row: span 2;
+  grid-column: span 1;
+}
+
+.grandparents{
+  grid-row: span 2;
+  grid-column: span 2;
+}
